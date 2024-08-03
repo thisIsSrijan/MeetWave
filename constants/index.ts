@@ -1,4 +1,11 @@
+import { routeModule } from "next/dist/build/templates/app-page";
+
 export const sidebarLinks = [
+    {
+        label: 'Home',
+        route: '/',
+        imgUrl: '/icons/Home.svg'
+    },
     {
         label: 'Upcoming',
         route: '/upcoming',

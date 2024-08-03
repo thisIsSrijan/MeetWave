@@ -13,7 +13,7 @@ const Sidebar = () => {
     p-6 pt-28 text-white max-sm:hidden lg:w-[264]'>
         <div className="flex flex-1 flex-col gap-6">
             {sidebarLinks.map((link) => {
-                const isActive = pathName === link.route || pathName.startsWith(link.route) //for dynamic routes
+                const isActive = pathName === link.route || pathName.startsWith(`${link.route}/`) //for dynamic routes
 
                 return (
                     <Link href={link.route} 
