@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MeetWave",
   description: "Video confrencing made easy, 3 clicks away from your friends!",
+  icons: {
+    icon: '/icons/logo.svg'
+  }
 };
 
 export default function RootLayout({

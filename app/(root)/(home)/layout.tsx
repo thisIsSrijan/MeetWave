@@ -1,6 +1,16 @@
 import React, {ReactNode} from 'react'
 import  Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "MeetWave",
+  description: "Video confrencing made easy, 3 clicks away from your friends!",
+  icons: {
+    icon: '/icons/logo.svg'
+  }
+};
+
 const HomeLayout = ({children} : {children : ReactNode}) => {
   return (
     <main className='relative'>
